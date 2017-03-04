@@ -2,6 +2,7 @@
 
 cd ~
 
+
 ####################
 # Mac Applications #
 ####################
@@ -21,21 +22,23 @@ brew cask install firealpaca
 brew cask install boostnote
 brew cask install iterm2
 brew cask install google-drive
-
+# Instal tools
 brew install npm
 brew install nkf
 brew install wget
-
 brew install tmux
 brew install reattach-to-user-namespace
 
+
 ###########
-# browser #
+# Browser #
 ###########
+
 brew cask install firefox
 wget https://github.com/mooz/keysnail/raw/master/keysnail.xpi
 # TODO: kill process after installation
 /Applications/Firefox.app/Contents/MacOS/firefox keysnail.xpi
+
 
 ########################
 # Terminal Environment #
@@ -68,9 +71,10 @@ fc-cache -vf
 cd ~
 git clone https://github.com/chriskempson/tomorrow-theme.git
 
-#####################
-# Emacs Environment #
-#####################
+
+#########
+# Emacs #
+#########
 
 # Install Emacs
 brew install emacs --with-cocoa
