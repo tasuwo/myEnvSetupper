@@ -2,10 +2,9 @@
 
 cd ~
 
-
-####################
-# Mac Applications #
-####################
+################
+# Applications #
+################
 
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -28,6 +27,15 @@ brew install nkf
 brew install wget
 brew install tmux
 brew install reattach-to-user-namespace
+
+# Install by mas
+brew install mas
+mas signin
+mas install `mas search "Memory Cleaner - Monitor,Free Up,Fast Clean Memory" | cut -d' ' -f1`
+mas install `mas search "Spark - Love your email again" | cut -d' ' -f1`
+mas install `mas search LINE | grep LINE | head -n1 | cut -d' ' -f1`
+mas install `mas search Xcode | grep Xcode | head -n1 | cut -d' ' -f1`
+mas signout
 
 
 ###########
